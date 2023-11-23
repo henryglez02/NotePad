@@ -7,7 +7,7 @@ export function TasksListComponent() {
 
   if (taskList.length === 0) {
     return (
-      <h1 className=" mt-4 text-center text-xl font-bold">
+      <h1 className=" mt-4 text-center text-xl font-bold text-slate-200">
         No Tasks
       </h1>
     );
@@ -15,7 +15,8 @@ export function TasksListComponent() {
 
   return (
     
-    <div className="grid grid-cols-1 gap-2 mx-auto max-w-sm mt-2 ">
+    <div className="grid grid-cols-1 gap-3 w-full px-6">
+      
       {taskList.map((task, index) => (
         <div key={index}>
           

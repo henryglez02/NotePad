@@ -5,7 +5,7 @@ import { TasksListComponent } from "./components/TasksListComponent";
 export function App() {
 
   return (
-    <main className="  pt-1">
+    <main className="flex flex-col items-center h-full w-full" >
       <PanelComponent  />
       <TasksListComponent  />
     </main>
