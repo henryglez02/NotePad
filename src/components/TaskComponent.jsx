@@ -8,14 +8,16 @@ export function TaskComponent(task) {
     deleteTask(task.id);
   };
   return (
-    <div className="flex relative flex-col gap-1 items-center border border-zinc-600 w-full  p-2 rounded-lg">
-      <h3 className="font-semibold  text-xl text-slate-100 text-ellipsis   ">{task.title}</h3>
+    <div className="flex relative flex-col gap-1 items-center border border-zinc-600 min-w-full  p-2 rounded-lg">
+      <h3 className="font-semibold  text-xl text-slate-100 text-ellipsis   ">
+        {task.title}
+      </h3>
       <p className="text-lg text-slate-400">{task.description}</p>
       <button className="absolute top-0 right-0 " onClick={handleClick}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          className="fill-rose-500 hover:fill-rose-600 w-6 h-6 "
+          className="fill-rose-400 hover:fill-rose-500 w-6 h-6 "
         >
           <path
             fillRule="evenodd"

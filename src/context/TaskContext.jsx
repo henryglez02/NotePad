@@ -1,17 +1,10 @@
 /* eslint-disable react/prop-types */
-import { createContext, useState, useEffect } from "react";
-import { data } from "../data/data";
+import { createContext, useState } from "react";
 
 export const TaskContext = createContext();
 
-
-export function TaskContextProvider({children}) {
-  
+export function TaskContextProvider({ children }) {
   const [taskList, setTaskList] = useState([]);
-
-  useEffect(() => {
-    setTaskList(data);
-  }, []);
 
   const deleteTask = (taskId) => {
     setTaskList(taskList.filter((task) => task.id !== taskId));

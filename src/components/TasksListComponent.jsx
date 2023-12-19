@@ -14,15 +14,16 @@ export function TasksListComponent() {
   }
 
   return (
-    
-    <div className="grid grid-cols-1 gap-3 w-full px-6">
-      
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 px-6 max-w-full">
       {taskList.map((task, index) => (
         <div key={index}>
-          
-          <TaskComponent task={task} id={task.id} description={task.description} title={task.title} />
+          <TaskComponent
+            task={task}
+            id={task.id}
+            description={task.description}
+            title={task.title}
+          />
         </div>
-
       ))}
     </div>
   );
