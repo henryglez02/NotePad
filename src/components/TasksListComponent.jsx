@@ -14,7 +14,7 @@ export function TasksListComponent() {
   }
 
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] gap-3 px-6 max-w-full">
+    <div className="grid grid-cols-[repeat(auto-fit,minmax(320px,1fr))] gap-3 px-6 max-w-full">
       {taskList.map((task, index) => (
         <div key={index}>
           <TaskComponent
